@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Virtual Community Exercise Platform</title>
+  </head>
+  <body>
+    <header>
+      <h1>ActiveAge Connect</h1>
+      <nav>
+        <ul>
+          <li><a href="#exercise-sessions">Exercise Sessions</a></li>
+          <li><a href="#live-sessions">Live Group Sessions</a></li>
+          <li><a href="login.html">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="exercise-sessions">
+        <h2>Exercise Sessions</h2>
+        <div id="session-list">
+          <!-- Placeholder for exercise sessions -->
+          <div class="session">
+            <h3>Session 1: Chair Yoga</h3>
+            <p>
+              Join our gentle chair yoga session to improve flexibility and
+              reduce stress.
+            </p>
+            <button
+              onclick="openVideo('http://youtu.be/5rJPwLkXzvg?si=zAsbHKP3evZBM3FF')"
+            >
+              Join Now
+            </button>
+          </div>
+          <div class="session">
+            <h3>Session 2: Strength Training</h3>
+            <p>
+              Build strength and improve muscle tone with our seated strength
+              training exercises.
+            </p>
+            <button
+              onclick="openVideo('http://www.youtube.com/watch?v=pUYxcRvdal8')"
+            >
+              Join Now
+            </button>
+          </div>
+        </div>
+      </section>
+      <section id="live-sessions">
+        <h2>Live Group Sessions</h2>
+        <p>Join live group exercise sessions led by certified instructors.</p>
+        <button onclick="joinLiveSession()">Join Now</button>
+      </section>
+      <section id="login">
+        <h2>Login</h2>
+        <form action="login.php" method="POST">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <button type="submit">Login</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Stay Active, Stay Connected!</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
